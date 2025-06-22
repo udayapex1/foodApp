@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div id="logo">
+        <img src="/src/assets/foodfusion.png" alt="" />
+        <a href="/" class="logo">
+          Food
+          <span class="highlight">Fusion</span>
+        </a>
+      </div>
+
+      <div class="navigator">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Service</a>
+        <a href="#contact">Contact us</a>
+        <a href="#containerBox">Food</a>
+      </div>
+
+      <div class="addtocart">
+        <button id="menuBtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <p id="user"><i class="fa-solid fa-user"></i></p>
+        <p id="cart"><i class="fa-solid fa-cart-plus"></i></p>
+      </div>
+
+      <div id="smNav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Service</a>
+        <a href="#contact">Contact us</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="home">
+      <div id="hero">
+        <div class="heroSection">
+          <div class="heroContent">
+            <p class="heroSubtitle">About Food Fusion</p>
+            <h1 class="heroTitle">Your Favourite Food Delivery Partner.</h1>
+
+            <button class="heroButton">Get Started</button>
+          </div>
+        </div>
+        <img src="/src/assets/foodBanner.avif" alt="" />
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <!-- <section id="about" class="about"> -->
+    <div class="aboutSec">
+      <section id="about" class="container">
+        <div class="content-section">
+          <div class="brand-tag">About Food Fusion</div>
+          <div class="typewriter">
+            <h2 id="typewriter-text"></h2>
+          </div>
+          <p class="description">
+            "Welcome to Food Fusion, your ultimate companion in exploring
+            delicious recipes and culinary adventures! <br />Whether you're a
+            seasoned chef or a kitchen novice, our platform offers a diverse
+            array of mouth-watering dishes, cooking tips, and food stories to
+            inspire your next meal.
+          </p>
+          <button class="cta-button">Get Started</button>
+        </div>
+      </section>
+    </div>
+    <!-- </section> -->
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="content">
+        <p id="ourServices">Our Services</p>
+        <h1>Filling Your Tummy is What We Care About</h1>
+        <p style="">
+          At Food Buddy, we offer a wide range of easy and delicious recipes to
+          suit every taste. <br />
+          Our platform is designed to inspire you with step-by-step cooking
+          guides, whether you're a beginner or a pro. <br />
+          You can save and share your favorite dishes effortlessly.
+        </p>
+      </div>
+
+      <div class="parent">
+        <div class="child">
+          <img
+            src="/src/assets/ourServices/food-delivery.png"
+            alt=""
+            class="serviceImg"
+          />
+          <br />
+          Food Delivery
+          <br />
+          <p>
+            "Delicious meals delivered hot and fresh, right to your doorstep."
+          </p>
+          <button class="btn">
+            Order Now <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <div class="child">
+          <img
+            src="/src/assets/ourServices/24-support.png"
+            alt=""
+            class="serviceImg"
+          /><br />
+          24/7 Hours Support <br />
+          <p>
+            "We're here for you 24/7 – anytime you need help, just reach out!"
+          </p>
+          <button class="btn">
+            Order Now <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <div class="child">
+          <img
+            src="/src/assets/ourServices/free-delivery.png"
+            alt=""
+            class="serviceImg"
+          />
+          <br />Free Delivery <br />
+          <p>
+            "Enjoy fast and free delivery on every order – no extra charges,
+            ever!"
+          </p>
+          <button class="btn">
+            Order Now <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Food Section   -->
+
+    <div id="containerBox" class="container2">
+      <div class="container-heading">
+        <h1 class="main-title">Explore Our Delicious Menu</h1>
+        <p class="sub-title">
+          From sizzling pizzas to refreshing smoothies, find your favorite dish
+          and enjoy!
+        </p>
+      </div>
+      <div id="cards-wrapper"></div>
+
+      <div class="load-more-container">
+        <button id="loadMoreBtn" class="btn-primary">Load More</button>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="headingofTest">
+      <h1>Testimonials</h1>
+      <p>See What Customer Say About Us</p>
+    </div>
+
+    <!-- testimonials -->
+    <div class="testimonials">
+      <div class="review">
+        <div class="feedback">
+          <p>
+            "Food Fusion has made cooking so much easier and fun for me. The
+            step-by-step recipes are perfect, even for someone like me who's not
+            a pro in the kitchen. Every dish I've tried has turned out great,
+            and my family loves it!"
+          </p>
+        </div>
+        <div class="personinfo">
+          <img src="/src/assets/reviewUsers/user1.jpeg" alt="perimg" />
+          <div>
+            <p>Name: Alison Parkor</p>
+            <p>
+              <i class="fa-solid fa-user" style="color: #000000"></i> Customer
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="review">
+        <div class="feedback">
+          <p>
+            "Honestly, I’m super impressed with the delivery service. The food
+            always arrives on time, still hot and packed neatly. And the best
+            part? It’s free! I’ve recommended Food Fusion to all my friends."
+          </p>
+        </div>
+        <div class="personinfo">
+          <img src="/src/assets/reviewUsers/user2.jpeg" alt="perimg" />
+          <div>
+            <p>Name: Kavya Verma</p>
+            <p>
+              <i class="fa-solid fa-user" style="color: #000000"></i> Customer
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="review">
+        <div class="feedback">
+          <p>
+            "From tasty recipes to quick customer support, Food Fusion never
+            fails to deliver a great experience. I once had a payment issue and
+            their support team responded within minutes and sorted everything
+            out. Super professional and friendly!"
+          </p>
+        </div>
+        <div class="personinfo">
+          <img src="/src/assets/reviewUsers/user3.jpeg" alt="perimg" />
+          <div>
+            <p>Name: Raghav Dubey</p>
+            <p>
+              <i class="fa-solid fa-user" style="color: #000000"></i> Customer
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="headings">
+        <p class="cont">Contact</p>
+        <h1>Get In Touch With Us</h1>
+        <p>
+          Have questions, suggestions, or just want to say hello? We'd love to
+          hear from you! Reach out to us anytime — our team is here to help and
+          ensure you have the best experience with Food Fusion Let’s connect and
+          make your food journey even more delightful!
+        </p>
+        <img
+          src="/src/assets/ourServices/contact-img.jpg"
+          alt="contactimg"
+          class="contactimg"
+        />
+      </div>
+
+      <div class="form">
+        <p>Fill this is form if you want to contact</p>
+        <input class="text" type="text" placeholder="Enter Your Name" />
+        <input class="text" type="email" placeholder="Enter Your email" />
+        <input class="msg" type=" message" placeholder=" Enter Your Message" />
+        <button class="sendmsg">Send Message</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="forQuick">
+      <div class="foodfusion">
+        <div id="logo">
+          <img src="/src/assets/foodfusion.png" alt="" />
+        </div>
+        <div>
+          <h1>Food <br /></h1>
+          <h1>Fussion <br /></h1>
+          <p>Your Favourite Food Delivery Partner.</p>
+        </div>
+      </div>
+
+      <div class="getintouch">
+        <h1>Get In Touch</h1>
+        <p>India</p>
+        <p><i class="fa-thin fa-envelope"></i>foodfusion@gmail.com</p>
+        <p><i class="fa-thin fa-phone"></i>+91 123 124 123 00</p>
+      </div>
+
+      <div class="quicklinks">
+        <h2>Quick Links</h2>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Service</a>
+        <a href="#contact">Contact us</a>
+      </div>
+
+      <div class="follow">
+        <h1>Follow Us</h1>
+        <div>
+          <i class="fa-brands fa-facebook fa-lg" style="color: #ffbd38"></i>
+          <i class="fa-brands fa-instagram fa-lg" style="color: #ffbd38"></i>
+          <i class="fa-brands fa-linkedin fa-lg" style="color: #ffbd38"></i>
+          <i class="fa-brands fa-github fa-lg" style="color: #ffbd38"></i>
+        </div>
+      </div>
+    </div>
+
+    <script src="/src/db/foodData.js"></script>
+    <script src="/src/app.js"></script>
+  </body>
+</html>
